@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'polls/css/index.css' %}">
+    <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon.ico'%}">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<header>
+    <div class="logo">
+        <a href="/">
+            <img src="{% static 'polls/img/logo.svg'%}" width="50px" height="50px">
+        </a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="/frames">Оправы</a></li>
+            <li><a href="/sunglasses">Солнцезащитные очки</a></li>
+            <li><a href="/lenses">Линзы</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="auth">
+         <p><a href="#">Вход</a></p>
+         <p><a href="#">Регистрация</a></p>
+    </div>
+</header>
+<body>
+  {% block body %}
+  {% endblock %}
+</body>
+<footer>
+    <div class="footer">&copy;
+        <span id="year"></span>
+        <span> очкофф. all rights reserved.</span>
+    </div>
+</footer>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+header {
+    background-color: white;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu {
+    flex-grow: 1;
+}
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    padding: 8px 10px;
+}
+.logo {
+    margin-right: 30px;
+}
+.menu a,
+.menu .active {
+    color: #fff;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 16px;
+    list-style: none;
+}
+.menu a,.menu .active {
+    display: block;
+    padding: 8px 10 px;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+}
+.menu a {
+    color: #303030;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    transition: all 0.5s ease;
+    color: #2e45a3;
+}
+.auth {
+    width: 100px;
+    float: left;
+    margin-left: 40px;
+    height: 80px;
+}
+.auth p {
+    margin-top: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.auth a {
+    text-decoration: none;
+    color: #303030;
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 18px;
+}
+.auth a:hover {
+    transition: all 0.5s ease;
+    color: #2e45a3;
+}
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: #303030;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+</style>
+
+
+
+
+
+
+
