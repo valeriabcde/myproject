@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="{% static 'polls/css/index.css' %}">
-    <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon.ico'%}">
+    <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon1.ico'%}">
     <meta charset="UTF-8">
     <title>Линзы</title>
 </head>
 <header>
     <div class="logo">
         <a href="/">
-            <img src="{% static 'polls/img/logo4.svg'%}" width="70px" height="70px">
+            <img src="{% static 'polls/img/logo2.svg'%}" width="140px" height="70px">
         </a>
     </div>
     <div class="menu">
@@ -23,6 +23,27 @@
     </div>
 </header>
 <body>
+    <div class="container">
+        <span class="title1">Линзы оптические</span>
+        <span class="subtitle1">
+            <span>Мы работаем с лабораторией и мастерской французских линз Essilor Crizal.</span>
+            <br></br>
+            <span>Cрок изготовления 3-5 рабочих дней.</span>
+            <br></br>
+            <span>Стоимость указана за пару, изготовление бесплатно.</span>
+            <br></br>
+            <br></br>
+            <span>Если вы хотите оформить заказ на линзы, свяжитесь с нами удобным для вас способом.</span>
+        </span>
+        <span class="title2">Виды линз</span>
+        <span class="subtitle2">
+            <span>Линзы есть любых видов и сложности: антикомпьютерные, от УФ-излучения, антибликовые, поляризационные, фотохромные, бифокальные,прогрессивные.</span>
+            <br></br>
+            <span>Напоминаем, что у нас пока нет кабинета оптометриста, мы изготавливаем очки по рецепту.</span>
+            <br></br>
+            <span>Также, в оптике на Большой конюшенной 9, мы можем проверить какие диоптрии стоят в ваших текущих очках, если вам в них комфортно и у вас нет астигматизма.</span>
+        </span>
+    </div>
 </body>
 <footer>
 </footer>
@@ -92,6 +113,52 @@ header {
 .menu ul li a:hover {
     transition: all 0.5s ease;
     color: #000;
+}
+.container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.title1 {
+    top: 167px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle1 {
+    top: 226px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.title2 {
+    top: 445px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle2 {
+    top: 504px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 </style>
 
