@@ -25,7 +25,7 @@
 <body>
      <div class="container">
       <span class="text">Оптика, которая оформляет эмоции</span>
-      <img src="{% static 'polls/img/img1.png'%}" alt="image" class="image1"/>
+      <img src="{% static 'polls/img/img.png'%}" alt="image" class="image1"/>
       <span class="text1">Советы по уходу за очками</span>
       <span class="title1">Пользуйтесь салфетками из микрофибры</span>
       <span class="subtitle1">
@@ -62,9 +62,24 @@
           наш специалист подскажет, есть ли необходимость заменить линзы. Ведь даже микроцарапины могут повредить зрению.
       </span>
     </div>
+    <div class="contact-rigth">
+        <p>I'm always open to discussing product <br><span>design work or partnerships.</span></p>
+        <form action="feedback/" method="post" class="contact-form">
+        {% csrf_token %}
+            <div class="third-row">
+                <input name="email" type="email" placeholder="Email">
+                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
 </body>
 <footer>
-</footer>
+    <div class="footer">&copy;
+        <span id="year"></span>
+        <span> очкофф. all rights reserved.</span>
+    </div>
+<footer>
 </html>
 
 <style>
@@ -155,9 +170,9 @@ header {
 }
 .image1 {
     top: 246px;
-    left: 300px;
-    width: 755px;
-    height: 461px;
+    left: 200px;
+    width: 983px;
+    height: 513px;
     position: absolute;
     object-fit: cover;
 }
@@ -283,6 +298,73 @@ header {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
+}
+.contact-rigth p{
+    color: #6b6b6b;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 30px;
+    margin-block-start: 700px;
+    margin-left: 100px;
+}
+.contact-rigth p span{
+    color: #6b6b6b;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
+}
+.contact-form input, .contact-form textarea{
+    border: none;
+    color: #303030;
+    background: var(--transparent-color-02);
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    padding: 15px 40px 40px 20px ;
+    border-radius: 5px;
+}
+.contact-form textarea{
+    width: 80%;
+    resize: none;
+}
+::placeholder{
+    color: var(--first-color);
+}
+.contact-form .first-row input{
+    width: 100%;
+}
+.contact-form .second-row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form .second-row input{
+    width: 48%;
+}
+.contact-form .btn{
+    border: none;
+    margin-top: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.footer {
+    margin-top: 20px;
+    position: relative;
+    height: 100%;
+    min-height: 10vh;
+    padding: 2rem;
+    background: #303030;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
 }
 </style>
 
