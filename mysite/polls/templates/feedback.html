@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+</head>
+<body>
+  {% for feedback in feedback %}
+  <div>Что нам написали</div>
+  <div>{{ feedback.text }}}</div>
+  <div>Когда</div>
+  <div>{{ feedback.created_at }}}</div>
+  {% endfor %}
+</body/>
+</html>

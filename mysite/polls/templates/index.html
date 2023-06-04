@@ -26,44 +26,55 @@
      <div class="container">
       <span class="text">Оптика, которая оформляет эмоции</span>
       <img src="{% static 'polls/img/img.png'%}" alt="image" class="image1"/>
-      <span class="text1">Советы по уходу за очками</span>
-      <span class="title1">Пользуйтесь салфетками из микрофибры</span>
+      <span class="text1">Почему так важно носить очки?</span>
       <span class="subtitle1">
+          Глаза — это мозг на периферии. Если вы хотите, чтобы он полноценно
+          работал, им нужно помогать. Если длительное время игнорировать
+          даже небольшую недокоррекцию, мозг может привыкнуть к плохому
+          зрению, и будет очень сложно вернуть глаза к здоровому состоянию.
+          К тому же, длительная недокоррекция тянет за собой нарушение
+          когнитивных функций и общего состояния нервной системы.
+          <br></br>
+          Заботьтесь о глазах вовремя.
+      </span>
+      <span class="text2">Советы по уходу за очками</span>
+      <span class="title2">Пользуйтесь салфетками из микрофибры</span>
+      <span class="subtitle2">
           Протирайте очки и линзы только салфеткой из микро-фибры, которая идёт в
           комплекте с очками. Обычная ткань может поцарапать линзы, а испорченные
           линзы напрямую ведут к испорченному зрению. Стирать салфетку можно
           жидким порошком или хозяйственным мылом.
       </span>
-      <span class="title2">Будьте осторожны с очистителями и лаками</span>
-      <span class="subtitle2">
+      <span class="title3">Будьте осторожны с очистителями и лаками</span>
+      <span class="subtitle3">
           Не нужно использовать ацетон и другие активные очистители.
           А ещё нельзя распылять лак для волос вблизи очков, потому что он может остаться на покрытии линз навсегда.
       </span>
-      <span class="title3">Берегите очки от царапин и перепада температур</span>
-      <span class="subtitle3">
+      <span class="title4">Берегите очки от царапин и перепада температур</span>
+      <span class="subtitle4">
           Не кладите очки линзами вниз, лучше всегда хранить их в футляре. Берегите их от
           прямых лучей солнца и перепада температур. Например, не стоит оставлять
           очки под палящим солнцем в машине или заглядывать в очках в приоткрытую духовку.
           Ровно так же всё работает и с чрезмерным охлаждением.
       </span>
-      <span class="title4">Снимайте и надевайте очки правильно</span>
-      <span class="subtitle4">
+      <span class="title5">Снимайте и надевайте очки правильно</span>
+      <span class="subtitle5">
           Простая привычка, которая продлит жизнь очков: снимайте и надевайте их двумя руками,
           а не тяните за одну дужку. В крайнем случае можно снять очки одной рукой, взявшись за рамку оправы или переносицу.
       </span>
-      <span class="title5">Если очки сломались — мы поможем</span>
-      <span class="subtitle5">
+      <span class="title6">Если очки сломались — мы поможем</span>
+      <span class="subtitle6">
           Не носите сломанные очки и не пытайтесь починить их самостоятельно.
           Это вредно для глаз и настроения. Свяжитесь с нами — и мы поможем решить проблему.
       </span>
-      <span class="title6">Приносите очки на технический осмотр</span>
-      <span class="subtitle6">
+      <span class="title7">Приносите очки на технический осмотр</span>
+      <span class="subtitle7">
           Если проблем нет, то всё равно приносите свои очки на технический осмотр:
           наш специалист подскажет, есть ли необходимость заменить линзы. Ведь даже микроцарапины могут повредить зрению.
       </span>
     </div>
     <div class="contact-rigth">
-        <p>I'm always open to discussing product <br><span>design work or partnerships.</span></p>
+        <p>Остались вопросы? <br><span>свяжитесь с нами.</span></p>
         <form action="feedback/" method="post" class="contact-form">
         {% csrf_token %}
             <div class="third-row">
@@ -158,10 +169,10 @@ header {
     justify-content: center;
 }
 .text {
-    top: 167px;
-    left: 480px;
+    top: 127px;
+    left: 410px;
     color: #303030;
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -169,7 +180,7 @@ header {
     text-align: center;
 }
 .image1 {
-    top: 246px;
+    top: 206px;
     left: 200px;
     width: 983px;
     height: 513px;
@@ -177,7 +188,7 @@ header {
     object-fit: cover;
 }
 .text1 {
-    top: 770px;
+    top: 780px;
     left: 100px;
     color: #303030;
     position: absolute;
@@ -185,126 +196,132 @@ header {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
-.title1 {
-    top: 820px;
-    left: 100px;
-    color: #303030;
-    position: absolute;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 .subtitle1 {
-    top: 850px;
+    top: 830px;
     left: 100px;
     color: #6b6b6b;
     position: absolute;
     font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text2 {
+    top: 950px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
 .title2 {
-    top: 920px;
+    top: 1000px;
     left: 100px;
-    color: #303030;
+    color: #6b6b6b;
     position: absolute;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .subtitle2 {
-    top: 950px;
+    top: 1030px;
     left: 100px;
     color: #6b6b6b;
     position: absolute;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
 }
 .title3 {
-    top: 1020px;
+    top: 1080px;
     left: 100px;
-    color: #303030;
+    color: #6b6b6b;
     position: absolute;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .subtitle3 {
-    top: 1050px;
+    top: 1110px;
     left: 100px;
     color: #6b6b6b;
     position: absolute;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
 }
 .title4 {
-    top: 1120px;
+    top: 1160px;
     left: 100px;
-    color: #303030;
+    color: #6b6b6b;
     position: absolute;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .subtitle4 {
-    top: 1150px;
+    top: 1190px;
     left: 100px;
     color: #6b6b6b;
     position: absolute;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
 }
 .title5 {
-    top: 1220px;
+    top: 1240px;
     left: 100px;
-    color: #303030;
+    color: #6b6b6b;
     position: absolute;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .subtitle5 {
-    top: 1250px;
+    top: 1270px;
     left: 100px;
     color: #6b6b6b;
     position: absolute;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
 }
 .title6 {
-    top: 1300px;
+    top: 1320px;
     left: 100px;
-    color: #303030;
+    color: #6b6b6b;
     position: absolute;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .subtitle6 {
-    top: 1330px;
+    top: 1350px;
     left: 100px;
     color: #6b6b6b;
     position: absolute;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
 }
-.contact-rigth p{
+.title7 {
+    top: 1380px;
+    left: 100px;
     color: #6b6b6b;
+    position: absolute;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle7 {
+    top: 1410px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact-rigth p{
+    color: #303030;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     margin-bottom: 30px;
-    margin-block-start: 700px;
+    margin-block-start: 780px;
     margin-left: 100px;
 }
 .contact-rigth p span{
@@ -317,7 +334,7 @@ header {
     border: none;
     color: #303030;
     font-family: 'Ubuntu', sans-serif;
-    background: var(--transparent-color-02);
+    background: #f0f0f0;
     font-size: 16px;
     margin-bottom: 20px;
     margin-left: 100px;

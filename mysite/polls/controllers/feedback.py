@@ -9,3 +9,9 @@ def create(request):
     feedback.save()
 
     return redirect('/')
+
+def index(request):
+    feedback = Feedback.object.order_by('created_at')
+    content = {'feedback':feedback}
+
+    return render(request, 'feedback.html', content)
