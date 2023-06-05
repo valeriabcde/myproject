@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from polls.controllers import index
 from polls.controllers import feedback
+from polls.controllers import api
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +27,6 @@ urlpatterns = [
     path('lenses/', index.lenses),
     path('contacts/', index.contacts),
     path('feedback/', feedback.create),
+    path('api/index', api.index),
 ]
 

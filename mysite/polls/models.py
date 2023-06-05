@@ -6,7 +6,7 @@ class Feedback(models.Model):
     email = models.CharField(max_length=255)
     text = models.TextField()
 
-class Product(models.Model):
+class Products(models.Model):
     image = models.ImageField(upload_to='images/')
     name = models.CharField(max_length=15)
     color = models.CharField(max_length=20)
