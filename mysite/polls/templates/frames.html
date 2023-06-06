@@ -27,87 +27,17 @@
         <h1>Оптические оправы</h1>
     </div>
      <div class="cards">
+        {% for product in products %}
         <div class="card">
-            <img src="https://thumb.tildacdn.com/tild6236-3735-4431-a439-363564393834/-/format/webp/IMG_0177.jpg">
+            <img src={{ product.image }}>
             <section class="details">
                 <div class="min-details">
-                  <h1>ZHEST<span>crystal</span></h1>
-                  <h1 class="price">8 500₽</h1>
+                  <h1>{{ product.name }}<span>{{ product.color }}</span></h1>
+                  <h1 class="price">{{ product.price }} ₽</h1>
                 </div>
           </section>
         </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild6532-6334-4266-a530-323831363539/-/format/webp/IMG_0124.jpg">
-            <section class="details">
-                <div class="min-details">
-                    <h1>RASS<span>blue</span></h1>
-                    <h1 class="price">7 500₽</h1>
-                </div>
-            </section>
-        </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild6332-6434-4761-b531-383162643235/-/format/webp/IMG_0086.jpg">
-            <section class="details">
-                <div class="min-details">
-                    <h1>KAO<span>dark-grey</span></h1>
-                    <h1 class="price">8 500₽</h1>
-                </div>
-            </section>
-        </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild3831-6265-4837-a531-383064623563/-/format/webp/IMG_0195.jpg">
-            <section class="details">
-                <div class="min-details">
-                    <h1>PDD<span>black</span></h1>
-                    <h1 class="price">8 500₽</h1>
-                </div>
-            </section>
-        </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild3633-6663-4363-a332-386237303038/-/format/webp/IMG_0156.jpg">
-            <section class="details">
-                <div class="min-details">
-                    <h1>BRAIL<span>black</span></h1>
-                    <h1 class="price">8 500₽</h1>
-                </div>
-            </section>
-        </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild3264-6563-4139-a432-396364633235/-/format/webp/IMG_0205.jpg">
-            <section class="details">
-                <div class="min-details">
-                    <h1>MORZ<span>brown</span></h1>
-                    <h1 class="price">7 500₽</h1>
-                </div>
-            </section>
-        </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild3737-6138-4765-b036-636435336136/-/format/webp/IMG_0096.jpg">
-            <section class="details">
-                <div class="min-details">
-                    <h1>LARIOK<span>turtle</span></h1>
-                    <h1 class="price">8 500₽</h1>
-                </div>
-            </section>
-        </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild3030-3233-4762-a335-303862313531/-/format/webp/IMG_0057.jpg">
-            <section class="details">
-                <div class="min-details">
-                  <h1>DISK<span>light-brown</span></h1>
-                  <h1 class="price">7 500₽</h1>
-                </div>
-            </section>
-        </div>
-        <div class="card">
-            <img src="https://thumb.tildacdn.com/tild6333-6137-4630-b631-373939346235/-/format/webp/IMG_0073.jpg">
-            <section class="details">
-                <div class="min-details">
-                    <h1>BOMCHKI<span>turtle</span></h1>
-                    <h1 class="price">7 500₽</h1>
-                </div>
-            </section>
-        </div>
+        {% endfor %}
     </div>
 </body>
 <footer>

@@ -26,30 +26,12 @@
     <div class="container">
         <span class="title">Наши магазины</span>
         <span class="subtitle">Заходите в гости</span>
-        <img src="https://thumb.tildacdn.com/tild3331-3166-4933-b065-376232303063/-/format/webp/1-44.jpg"
-            alt="image"
-            class="image"
-          />
-        <img src="https://thumb.tildacdn.com/tild3265-6239-4262-a562-646433323864/-/format/webp/1-2.jpg"
-            alt="image"
-            class="image2"
-          />
-        <img src="https://thumb.tildacdn.com/tild3061-3766-4736-b561-346664626635/-/format/webp/1-7_2.jpg"
-            alt="image"
-            class="image4"
-          />
-        <img src="https://thumb.tildacdn.com/tild3162-3032-4839-b730-393839343734/-/format/webp/SVMF3835.jpg"
-            alt="image"
-            class="image1"
-          />
-        <img src="https://thumb.tildacdn.com/tild6636-6262-4137-a638-303234636161/-/format/webp/SVMF3717.jpg"
-            alt="image"
-            class="image3"
-          />
-        <img src="https://thumb.tildacdn.com/tild3534-3038-4463-a161-613835366334/-/format/webp/SVMF3822.jpg"
-            alt="image"
-            class="image5"
-          />
+        <img src="{% static 'polls/img/contacts11.png'%}" alt="image" class="image1"/>
+        <img src="{% static 'polls/img/contacts12.png'%}" alt="image" class="image2"/>
+        <img src="{% static 'polls/img/contacts13.png'%}" alt="image" class="image3"/>
+        <img src="{% static 'polls/img/contacts23.png'%}" alt="image" class="image4"/>
+        <img src="{% static 'polls/img/contacts22.png'%}" alt="image" class="image5"/>
+        <img src="{% static 'polls/img/contacts21.png'%}" alt="image" class="image6"/>
         <span class="shop1">Магазин 1</span>
         <span class="address1">
             <span>Санкт-Петербург, Большая Конюшенная, 9</span>
@@ -169,19 +151,11 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 }
-.image {
+.image1 {
     top: 203px;
     left: 100px;
     width: 410px;
     height: 504px;
-    position: absolute;
-    object-fit: cover;
-}
-.image1 {
-    top: 823px;
-    left: 505px;
-    width: 410px;
-    height: 542px;
     position: absolute;
     object-fit: cover;
 }
@@ -194,14 +168,6 @@ header {
     object-fit: cover;
 }
 .image3 {
-    top: 1104px;
-    left: 100px;
-    width: 380px;
-    height: 260px;
-    position: absolute;
-    object-fit: cover;
-}
-.image4 {
     top: 471px;
     left: 540px;
     width: 380px;
@@ -209,7 +175,23 @@ header {
     position: absolute;
     object-fit: cover;
 }
+.image4 {
+    top: 823px;
+    left: 505px;
+    width: 410px;
+    height: 542px;
+    position: absolute;
+    object-fit: cover;
+}
 .image5 {
+    top: 1104px;
+    left: 100px;
+    width: 380px;
+    height: 260px;
+    position: absolute;
+    object-fit: cover;
+}
+.image6 {
     top: 823px;
     left: 100px;
     width: 380px;
