@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'polls/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
     <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon1.ico'%}">
     <meta charset="UTF-8">
     <title>Cолнцезащитные очки</title>
@@ -23,17 +23,17 @@
     </div>
 </header>
 <body>
-    <div class="description">
+    <div class="description_sunglasses">
         <h1>Солнцезащитные очки</h1>
     </div>
-    <div class="cards">
+    <div class="cards_sunglasses">
         {% for item in items %}
-        <div class="card">
+        <div class="card_sunglasses">
             <img src={{ item.image }}>
-            <section class="details">
-                <div class="min-details">
+            <section class="details_sunglasses">
+                <div class="min-details_sunglasses">
                   <h1>{{ item.name }}<span>{{ item.color }}</span></h1>
-                  <h1 class="price">{{ item.price }} ₽</h1>
+                  <h1 class="price_sunglasses">{{ item.price }} ₽</h1>
                 </div>
             </section>
         </div>
@@ -42,161 +42,10 @@
 </body>
 <footer>
     <div class="footer">&copy;
-        <span id="year">2023</span>
+        <span id="year"></span>
         <span> очкофф. all rights reserved.</span>
     </div>
 </footer>
 </html>
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-header {
-    background-color: white;
-}
-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.menu {
-    flex-grow: 1;
-}
-.menu ul {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.menu li {
-    margin-right: 20px;
-}
-.menu a {
-    padding: 10px 10px;
-}
-.logo {
-    margin-right: 200px;
-    margin-left: 50px;
-}
-.menu a,
-.menu .active {
-    color: #fff;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-}
-.menu ul {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 16px;
-    line-height: 16px;
-    list-style: none;
-}
-.menu a,.menu .active {
-    display: block;
-    padding: 8px 10 px;
-    text-transform: uppercase;
-    letter-spacing: .27em;
-}
-.menu a {
-    color: #6b6b6b;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    text-decoration: none;
-}
-.menu ul li a:hover {
-    transition: all 0.5s ease;
-    color: #303030;
-}
-.description {
-    top: 127px;
-    left: 500px;
-	text-align: center;
-	position: absolute;
-}
-.description h1 {
-	margin: 0;
-	font-size: 28px;
-    text-transform: uppercase;
-	color: #303030;
-}
-body {
-    display: block;
-    align-items: flex-start;
-    font-family: 'Ubuntu', sans-serif;
-}
-h1 {
-    font-size: 18px;
-    color: #303030;
-}
-.card {
-    top: 147px;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-    height: 500px;
-    overflow: hidden;
-    width: 400px;
-}
-.card img {
-    width: 100%;
-}
-.details {
-    box-sizing: border-box;
-    background-color: #FFF;
-    border-radius: 5px;
-    padding: 5px 10px 10px 10px;
-    position: absolute;
-    top: 85%;
-    width: 100%;
-}
-.details > .min-details {
-    margin-bottom: 20px;
-}
-.details > .min-details {
-    display: flex;
-    justify-content: space-between;
-}
-.details > .min-details > h1 > span {
-    color: #7B7B7B;
-    display: block;
-    font-size: 15px;
-    font-weight: 400;
-}
-.cards {
-    display: grid;
-    /* Автоматически заполняем на всю ширину grid-контейнера */
-    grid-template-columns: repeat(auto-fill, 400px);
-    width: 100%;
-    max-width: 1300px; /* Ширина grid-контейнера */
-    justify-content: center;
-    justify-items: center; /* Размещаем карточку по центру */
-    column-gap: 30px; /* Отступ между колонками */
-    row-gap: 40px; /* Отступ между рядами */
-    margin: 0 auto;
-}
-:root {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;;
-}
-.footer {
-    margin-top: 170px;
-    position: relative;
-    height: 100%;
-    min-height: 10vh;
-    padding: 2rem;
-    background: #303030;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
-}
-</style>
+

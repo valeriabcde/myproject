@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'polls/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
     <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon1.ico'%}">
     <meta charset="UTF-8">
     <title>Контакты</title>
@@ -23,15 +23,15 @@
     </div>
 </header>
 <body>
-    <div class="container">
-        <span class="title">Наши магазины</span>
-        <span class="subtitle">Заходите в гости</span>
-        <img src="{% static 'polls/img/contacts11.png'%}" alt="image" class="image1"/>
-        <img src="{% static 'polls/img/contacts12.png'%}" alt="image" class="image2"/>
-        <img src="{% static 'polls/img/contacts13.png'%}" alt="image" class="image3"/>
-        <img src="{% static 'polls/img/contacts23.png'%}" alt="image" class="image4"/>
-        <img src="{% static 'polls/img/contacts22.png'%}" alt="image" class="image5"/>
-        <img src="{% static 'polls/img/contacts21.png'%}" alt="image" class="image6"/>
+    <div class="container_contacts">
+        <span class="title_contacts">Наши магазины</span>
+        <span class="subtitle_contacts">Заходите в гости</span>
+        <img src="{% static 'polls/img/contacts11.png'%}" alt="image" class="image1_contacts"/>
+        <img src="{% static 'polls/img/contacts12.png'%}" alt="image" class="image2_contacts"/>
+        <img src="{% static 'polls/img/contacts13.png'%}" alt="image" class="image3_contacts"/>
+        <img src="{% static 'polls/img/contacts23.png'%}" alt="image" class="image4_contacts"/>
+        <img src="{% static 'polls/img/contacts22.png'%}" alt="image" class="image5_contacts"/>
+        <img src="{% static 'polls/img/contacts21.png'%}" alt="image" class="image6_contacts"/>
         <span class="shop1">Магазин 1</span>
         <span class="address1">
             <span>Санкт-Петербург, Большая Конюшенная, 9</span>
@@ -58,203 +58,6 @@
 </footer>
 </html>
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-header {
-    background-color: white;
-}
-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.menu {
-    flex-grow: 1;
-}
-.menu ul {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.menu li {
-    margin-right: 20px;
-}
-.menu a {
-    padding: 10px 10px;
-}
-.logo {
-    margin-right: 200px;
-    margin-left: 50px;
-}
-.menu a,
-.menu .active {
-    color: #fff;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-}
-.menu ul {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 16px;
-    line-height: 16px;
-    list-style: none;
-}
-.menu a,.menu .active {
-    display: block;
-    padding: 8px 10 px;
-    text-transform: uppercase;
-    letter-spacing: .27em;
-}
-.menu a {
-    color: #6b6b6b;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    text-decoration: none;
-}
-.menu ul li a:hover {
-    transition: all 0.5s ease;
-    color: #000;
-}
-.container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-}
-.title {
-    top: 120px;
-    left: 100px;
-    color: #303030;
-    position: absolute;
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-}
-.subtitle {
-    top: 163px;
-    left: 100px;
-    color: #6b6b6b;
-    position: absolute;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.image1 {
-    top: 203px;
-    left: 100px;
-    width: 410px;
-    height: 504px;
-    position: absolute;
-    object-fit: cover;
-}
-.image2 {
-    top: 203px;
-    left: 540px;
-    width: 380px;
-    height: 236px;
-    position: absolute;
-    object-fit: cover;
-}
-.image3 {
-    top: 471px;
-    left: 540px;
-    width: 380px;
-    height: 236px;
-    position: absolute;
-    object-fit: cover;
-}
-.image4 {
-    top: 823px;
-    left: 505px;
-    width: 410px;
-    height: 542px;
-    position: absolute;
-    object-fit: cover;
-}
-.image5 {
-    top: 1104px;
-    left: 100px;
-    width: 380px;
-    height: 260px;
-    position: absolute;
-    object-fit: cover;
-}
-.image6 {
-    top: 823px;
-    left: 100px;
-    width: 380px;
-    height: 260px;
-    position: absolute;
-    object-fit: cover;
-}
-.shop1 {
-    top: 203px;
-    left: 930px;
-    color: #6b6b6b;
-    position: absolute;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.address1 {
-    top: 233px;
-    left: 930px;
-    color: #6b6b6b;
-    position: absolute;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-}
-.shop2 {
-    top: 823px;
-    left: 925px;
-    color: #6b6b6b;
-    position: absolute;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.address2 {
-    top: 853px;
-    left: 925px;
-    color: #6b6b6b;
-    position: absolute;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-}
-:root {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;;
-}
-.footer {
-    margin-top: 650px;
-    position: relative;
-    height: 100%;
-    min-height: 10vh;
-    padding: 2rem;
-    background: #303030;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
-}
-</style>
 
 
 

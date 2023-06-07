@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'polls/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
     <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon1.ico'%}">
     <meta charset="UTF-8">
     <title>Линзы</title>
@@ -23,9 +23,9 @@
     </div>
 </header>
 <body>
-    <div class="container">
-        <span class="title1">Линзы оптические</span>
-        <span class="subtitle1">
+    <div class="container_lenses">
+        <span class="title1_lenses">Линзы оптические</span>
+        <span class="subtitle1_lenses">
             <span>Мы работаем с лабораторией и мастерской французских линз Essilor Crizal.</span>
             <br></br>
             <span>Cрок изготовления 3-5 рабочих дней.</span>
@@ -35,8 +35,8 @@
             <br></br>
             <span>Если вы хотите оформить заказ на линзы, свяжитесь с нами удобным для вас способом.</span>
         </span>
-        <span class="title2">Виды линз</span>
-        <span class="subtitle2">
+        <span class="title2_lenses">Виды линз</span>
+        <span class="subtitle2_lenses">
             <span>Линзы есть любых видов и сложности: антикомпьютерные, от УФ-излучения, антибликовые, поляризационные, фотохромные, бифокальные,прогрессивные.</span>
             <br></br>
             <span>Напоминаем, что у нас пока нет кабинета оптометриста, мы изготавливаем очки по рецепту.</span>
@@ -52,136 +52,6 @@
     </div>
 </footer>
 </html>
-
-<style>
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-header {
-    background-color: white;
-}
-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.menu {
-    flex-grow: 1;
-}
-.menu ul {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.menu li {
-    margin-right: 20px;
-}
-.menu a {
-    padding: 10px 10px;
-}
-.logo {
-    margin-right: 200px;
-    margin-left: 50px;
-}
-.menu a,
-.menu .active {
-    color: #fff;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-}
-.menu ul {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 16px;
-    line-height: 16px;
-    list-style: none;
-}
-.menu a,.menu .active {
-    display: block;
-    padding: 8px 10 px;
-    text-transform: uppercase;
-    letter-spacing: .27em;
-}
-.menu a {
-    color: #6b6b6b;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    text-decoration: none;
-}
-.menu ul li a:hover {
-    transition: all 0.5s ease;
-    color: #000;
-}
-.container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-}
-.title1 {
-    top: 120px;
-    left: 100px;
-    color: #303030;
-    position: absolute;
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-}
-.subtitle1 {
-    top: 170px;
-    left: 100px;
-    color: #6b6b6b;
-    position: absolute;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-}
-.title2 {
-    top: 390px;
-    left: 100px;
-    color: #303030;
-    position: absolute;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-}
-.subtitle2 {
-    top: 440px;
-    left: 100px;
-    color: #6b6b6b;
-    position: absolute;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-}
-:root {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;;
-}
-.footer {
-    margin-top: 10px;
-    position: relative;
-    height: 100%;
-    min-height: 10vh;
-    padding: 2rem;
-    background: #303030;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
-}
-</style>
 
 
 

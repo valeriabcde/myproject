@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* Header */
+
+header {
+    background-color: white;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    flex-grow: 1;
+}
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    margin-right: 20px;
+}
+.menu a {
+    padding: 10px 10px;
+}
+.logo {
+    margin-right: 200px;
+    margin-left: 50px;
+}
+.menu a,
+.menu .active {
+    color: #fff;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 16px;
+    list-style: none;
+}
+.menu a,.menu .active {
+    display: block;
+    padding: 8px 10 px;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+}
+.menu a {
+    color: #6b6b6b;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    transition: all 0.5s ease;
+    color: #000;
+}
+
+/* Main page */
+
+.container_main_page {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.text_main_page {
+    top: 127px;
+    left: 410px;
+    color: #303030;
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+}
+.image1 {
+    top: 206px;
+    left: 200px;
+    width: 983px;
+    height: 513px;
+    position: absolute;
+    object-fit: cover;
+}
+.text1_main_page {
+    top: 780px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle1_main_page {
+    top: 830px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text2_main_page {
+    top: 950px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.title2_main_page {
+    top: 1000px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle2_main_page {
+    top: 1030px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title3_main_page {
+    top: 1080px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle3_main_page {
+    top: 1110px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title4_main_page {
+    top: 1160px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle4_main_page {
+    top: 1190px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title5_main_page {
+    top: 1240px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle5_main_page {
+    top: 1270px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title6_main_page {
+    top: 1320px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle6_main_page {
+    top: 1350px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title7_main_page {
+    top: 1380px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle7_main_page {
+    top: 1410px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Feedback */
+
+.contact-rigth p{
+    color: #303030;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-block-start: 780px;
+    margin-left: 100px;
+}
+.contact-rigth p span{
+    color: #6b6b6b;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
+}
+.contact-form input, .contact-form textarea{
+    border: none;
+    color: #303030;
+    font-family: 'Ubuntu', sans-serif;
+    background: #f0f0f0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    padding: 15px 40px 40px 20px ;
+    border-radius: 5px;
+}
+.contact-form textarea{
+    width: 80%;
+    resize: none;
+}
+::placeholder{
+    color: #6b6b6b;
+}
+.contact-form .first-row input{
+    width: 100%;
+}
+.contact-form .second-row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form .second-row input{
+    width: 48%;
+}
+.contact-form .btn{
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #303030;
+    margin-top: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-bottom: 18px;
+}
+
+/* Optical frames page */
+
+.description_frames {
+    top: 127px;
+    left: 525px;
+	text-align: center;
+	position: absolute;
+}
+.description_frames h1 {
+	margin: 0;
+	font-size: 28px;
+    text-transform: uppercase;
+	color: #303030;
+}
+body {
+    display: block;
+    align-items: flex-start;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-size: 18px;
+    color: #303030;
+}
+.card_frames {
+    top: 147px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    height: 500px;
+    overflow: hidden;
+    width: 400px;
+}
+.card_frames img {
+    width: 100%;
+}
+.details_frames {
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 5px 10px 10px 10px;
+    position: absolute;
+    top: 85%;
+    width: 100%;
+}
+.details_frames > .min-details_frames {
+    margin-bottom: 20px;
+}
+.details_frames > .min-details_frames {
+    display: flex;
+    justify-content: space-between;
+}
+.details_frames > .min-details_frames > h1 > span {
+    color: #7B7B7B;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+}
+.cards_frames {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 400px);
+    width: 100%;
+    max-width: 1300px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    margin: 0 auto;
+    padding: 0px 0px 160px;
+}
+
+/* Sunglasses page */
+
+.description_sunglasses {
+    top: 127px;
+    left: 500px;
+	text-align: center;
+	position: absolute;
+}
+.description_sunglasses h1 {
+	margin: 0;
+	font-size: 28px;
+    text-transform: uppercase;
+	color: #303030;
+}
+body {
+    display: block;
+    align-items: flex-start;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-size: 18px;
+    color: #303030;
+}
+.card_sunglasses {
+    top: 147px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    height: 500px;
+    overflow: hidden;
+    width: 400px;
+}
+.card_sunglasses img {
+    width: 100%;
+}
+.details_sunglasses {
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 5px 10px 10px 10px;
+    position: absolute;
+    top: 85%;
+    width: 100%;
+}
+.details_sunglasses > .min-details_sunglasses {
+    margin-bottom: 20px;
+}
+.details_sunglasses > .min-details_sunglasses {
+    display: flex;
+    justify-content: space-between;
+}
+.details_sunglasses > .min-details_sunglasses > h1 > span {
+    color: #7B7B7B;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+}
+.cards_sunglasses {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 400px);
+    width: 100%;
+    max-width: 1300px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    margin: 0 auto;
+    padding: 0px 0px 160px;
+}
+
+/* Lenses page */
+
+.container_lenses {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 85vh;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.title1_lenses {
+    top: 120px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle1_lenses {
+    top: 170px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title2_lenses {
+    top: 390px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle2_lenses {
+    top: 440px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Contacts page */
+
+.container_contacts {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 198vh;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.title_contacts {
+    top: 120px;
+    left: 100px;
+    color: #303030;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.subtitle_contacts {
+    top: 163px;
+    left: 100px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.image1_contacts {
+    top: 203px;
+    left: 100px;
+    width: 410px;
+    height: 504px;
+    position: absolute;
+    object-fit: cover;
+}
+.image2_contacts {
+    top: 203px;
+    left: 540px;
+    width: 380px;
+    height: 236px;
+    position: absolute;
+    object-fit: cover;
+}
+.image3_contacts {
+    top: 471px;
+    left: 540px;
+    width: 380px;
+    height: 236px;
+    position: absolute;
+    object-fit: cover;
+}
+.image4_contacts {
+    top: 823px;
+    left: 505px;
+    width: 410px;
+    height: 542px;
+    position: absolute;
+    object-fit: cover;
+}
+.image5_contacts {
+    top: 1104px;
+    left: 100px;
+    width: 380px;
+    height: 260px;
+    position: absolute;
+    object-fit: cover;
+}
+.image6_contacts {
+    top: 823px;
+    left: 100px;
+    width: 380px;
+    height: 260px;
+    position: absolute;
+    object-fit: cover;
+}
+.shop1 {
+    top: 203px;
+    left: 930px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.address1 {
+    top: 233px;
+    left: 930px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.shop2 {
+    top: 823px;
+    left: 925px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.address2 {
+    top: 853px;
+    left: 925px;
+    color: #6b6b6b;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Footer */
+
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.footer {
+    margin-top: 20px;
+    flex-shrink: 0;
+    min-height: 10vh;
+    padding: 2rem;
+    background: #303030;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
