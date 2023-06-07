@@ -1,28 +1,6 @@
-<!DOCTYPE html>
+{% extends 'template.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
-    <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon1.ico'%}">
-    <meta charset="UTF-8">
-    <title>Главная страница</title>
-</head>
-<header>
-    <div class="logo">
-        <a href="/">
-            <img src="{% static 'polls/img/logo2.svg' %}" width="140px" height="70px">
-        </a>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="/frames">Оправы</a></li>
-            <li><a href="/sunglasses">Солнцезащитные очки</a></li>
-            <li><a href="/lenses">Линзы</a></li>
-            <li><a href="/contacts">Контакты</a></li>
-        </ul>
-    </div>
-</header>
-<body>
+{% block body %}
      <div class="container_main_page">
       <span class="text_main_page">Оптика, которая оформляет эмоции</span>
       <img src="{% static 'polls/img/img.png'%}" alt="image" class="image1"/>
@@ -84,14 +62,8 @@
             <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
         </form>
     </div>
-</body>
-<footer>
-    <div class="footer">&copy;
-        <span id="year"></span>
-        <span> очкофф. all rights reserved.</span>
-    </div>
-<footer>
-</html>
+{% endblock %}
+
 
 
 
