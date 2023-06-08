@@ -1,1 +1,1 @@
-### mysite's database scheme:
+### mysite database scheme:
