@@ -17,3 +17,4 @@ class Item(models.Model):
     name = models.CharField(max_length=15)
     color = models.CharField(max_length=20)
     price = models.IntegerField()
+
