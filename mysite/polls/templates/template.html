@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
     <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon1.ico'%}">
     <meta charset="UTF-8">
-    <title>Страница</title>
+    <title>{% block title %}Default title{% endblock title %}</title>
 </head>
 <header>
     <div class="logo">
